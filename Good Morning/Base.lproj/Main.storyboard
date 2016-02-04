@@ -13,46 +13,101 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundII.jpg" id="99S-zv-YV9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="t76-Yw-DtG">
                                 <rect key="frame" x="20" y="517" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ohjoy.png" id="rQs-U9-yEH">
-                                <rect key="frame" x="-7" y="0.0" width="334" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun-v2.png" id="1wT-k3-2hp">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun-v2.png" id="1wT-k3-2hp">
                                 <rect key="frame" x="40" y="164" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RRn-Tv-P3f" appends="YES" id="2n6-Zh-SeV"/>
+                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Gmc-ud-Vfg">
                                 <rect key="frame" x="88" y="488" width="144" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <state key="normal" title="- Start -">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xrR-8T-GIh"/>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sy7-zh-gnw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Morning" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kZZ-5x-a4R">
+                                <rect key="frame" x="20" y="20" width="280" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="F9W-4d-bk9">
+                                <rect key="frame" x="249" y="500" width="56" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ic_keyboard_arrow_right_48px-128.png"/>
+                                <connections>
+                                    <segue destination="4Vc-Lx-7q3" kind="modal" identifier="Alarm" id="jEf-kr-YP6"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Iy-TT-7Ha">
+                                <rect key="frame" x="20" y="20" width="280" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="goodMorning" destination="rQs-U9-yEH" id="1Pc-sy-Ouw"/>
+                        <outlet property="goodMorning" destination="kZZ-5x-a4R" id="Jkk-80-sRt"/>
                         <outlet property="set" destination="t76-Yw-DtG" id="QZd-0D-PHe"/>
-                        <outlet property="sun" destination="1wT-k3-2hp" id="ohO-nj-KHE"/>
+                        <outlet property="sun" destination="1wT-k3-2hp" id="E2X-bO-G64"/>
+                        <outlet property="sunAction" destination="Gmc-ud-Vfg" id="Oac-uY-ObU"/>
+                        <outlet property="timer" destination="8Iy-TT-7Ha" id="PTJ-aG-Qeh"/>
+                        <outlet property="timerLabel" destination="8Iy-TT-7Ha" id="vto-9h-vcD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="RRn-Tv-P3f">
+                    <connections>
+                        <action selector="sunStop:" destination="BYZ-38-t0r" id="7y0-Zc-2QL"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="162.66666666666666" y="334.17333333333335"/>
+            <point key="canvasLocation" x="162" y="334"/>
+        </scene>
+        <!--Alarm View Controller-->
+        <scene sceneID="QfX-p1-FSR">
+            <objects>
+                <viewController id="4Vc-Lx-7q3" customClass="AlarmViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lsu-KP-idS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundII.jpg" id="PT7-lQ-hRu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fp4-LY-wYO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vQh-qb-Ib6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="626" y="334"/>
         </scene>
     </scenes>
     <resources>
-        <image name="ohjoy.png" width="613" height="278"/>
+        <image name="backgroundII.jpg" width="640" height="1140"/>
+        <image name="ic_keyboard_arrow_right_48px-128.png" width="128" height="128"/>
         <image name="sun-v2.png" width="480" height="480"/>
     </resources>
 </document>

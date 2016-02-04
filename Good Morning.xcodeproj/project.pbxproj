@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		983F83D21C61090A0009C2C3 /* backgroundII.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 983F83D11C61090A0009C2C3 /* backgroundII.jpg */; };
+		983F83D41C62AE810009C2C3 /* ic_keyboard_arrow_right_48px-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 983F83D31C62AE810009C2C3 /* ic_keyboard_arrow_right_48px-128.png */; };
+		983F83D71C62BC120009C2C3 /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 983F83D61C62BC120009C2C3 /* AlarmViewController.m */; };
 		98C9AFEB1C582E43000C6A24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C9AFEA1C582E43000C6A24 /* main.m */; };
 		98C9AFEE1C582E43000C6A24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C9AFED1C582E43000C6A24 /* AppDelegate.m */; };
 		98C9AFF11C582E43000C6A24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C9AFF01C582E43000C6A24 /* ViewController.m */; };
@@ -16,7 +19,6 @@
 		98C9B0041C582E43000C6A24 /* Good_MorningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C9B0031C582E43000C6A24 /* Good_MorningTests.m */; };
 		98C9B00F1C582E43000C6A24 /* Good_MorningUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C9B00E1C582E43000C6A24 /* Good_MorningUITests.m */; };
 		98C9B01D1C583813000C6A24 /* sun-v2.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C9B01C1C583813000C6A24 /* sun-v2.png */; };
-		98C9B01F1C584DB5000C6A24 /* ohjoy.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C9B01E1C584DB5000C6A24 /* ohjoy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		983F83D11C61090A0009C2C3 /* backgroundII.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = backgroundII.jpg; path = "../../../../../School/Human Computer Interaction/good morning/backgroundII.jpg"; sourceTree = "<group>"; };
+		983F83D31C62AE810009C2C3 /* ic_keyboard_arrow_right_48px-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_keyboard_arrow_right_48px-128.png"; path = "../../../../../School/Human Computer Interaction/good morning/ic_keyboard_arrow_right_48px-128.png"; sourceTree = "<group>"; };
+		983F83D51C62BC120009C2C3 /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
+		983F83D61C62BC120009C2C3 /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
 		98C9AFE61C582E43000C6A24 /* Good Morning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Good Morning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C9AFEA1C582E43000C6A24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98C9AFEC1C582E43000C6A24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,7 +60,6 @@
 		98C9B00E1C582E43000C6A24 /* Good_MorningUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Good_MorningUITests.m; sourceTree = "<group>"; };
 		98C9B0101C582E43000C6A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98C9B01C1C583813000C6A24 /* sun-v2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sun-v2.png"; path = "../../../../../School/Human Computer Interaction/good morning/sun-v2.png"; sourceTree = "<group>"; };
-		98C9B01E1C584DB5000C6A24 /* ohjoy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ohjoy.png; path = "../../../../../School/Human Computer Interaction/good morning/ohjoy.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +115,8 @@
 				98C9AFEF1C582E43000C6A24 /* ViewController.h */,
 				98C9AFF01C582E43000C6A24 /* ViewController.m */,
 				98C9AFF21C582E43000C6A24 /* Main.storyboard */,
+				983F83D51C62BC120009C2C3 /* AlarmViewController.h */,
+				983F83D61C62BC120009C2C3 /* AlarmViewController.m */,
 				98C9AFF51C582E43000C6A24 /* Assets.xcassets */,
 				98C9AFF71C582E43000C6A24 /* LaunchScreen.storyboard */,
 				98C9AFFA1C582E43000C6A24 /* Info.plist */,
@@ -121,7 +128,8 @@
 		98C9AFE91C582E43000C6A24 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				98C9B01E1C584DB5000C6A24 /* ohjoy.png */,
+				983F83D31C62AE810009C2C3 /* ic_keyboard_arrow_right_48px-128.png */,
+				983F83D11C61090A0009C2C3 /* backgroundII.jpg */,
 				98C9B01C1C583813000C6A24 /* sun-v2.png */,
 				98C9AFEA1C582E43000C6A24 /* main.m */,
 			);
@@ -249,9 +257,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98C9B01F1C584DB5000C6A24 /* ohjoy.png in Resources */,
 				98C9B01D1C583813000C6A24 /* sun-v2.png in Resources */,
 				98C9AFF91C582E43000C6A24 /* LaunchScreen.storyboard in Resources */,
+				983F83D21C61090A0009C2C3 /* backgroundII.jpg in Resources */,
+				983F83D41C62AE810009C2C3 /* ic_keyboard_arrow_right_48px-128.png in Resources */,
 				98C9AFF61C582E43000C6A24 /* Assets.xcassets in Resources */,
 				98C9AFF41C582E43000C6A24 /* Main.storyboard in Resources */,
 			);
@@ -278,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				983F83D71C62BC120009C2C3 /* AlarmViewController.m in Sources */,
 				98C9AFF11C582E43000C6A24 /* ViewController.m in Sources */,
 				98C9AFEE1C582E43000C6A24 /* AppDelegate.m in Sources */,
 				98C9AFEB1C582E43000C6A24 /* main.m in Sources */,
@@ -504,6 +514,7 @@
 				98C9B0151C582E43000C6A24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98C9B0161C582E43000C6A24 /* Build configuration list for PBXNativeTarget "Good MorningTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +523,7 @@
 				98C9B0181C582E43000C6A24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98C9B0191C582E43000C6A24 /* Build configuration list for PBXNativeTarget "Good MorningUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +532,7 @@
 				98C9B01B1C582E43000C6A24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
