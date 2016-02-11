@@ -1,1 +1,0 @@
-This app is specifically designed for the iOS 5 model, and is under current development. It's purpose is to begin the process of pre-heating a coffee machine. Users will have the option of beginning this process either manually or automatically through synchronization with the users morning alarm application. 
