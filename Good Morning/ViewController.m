@@ -13,13 +13,15 @@
 @property (weak, nonatomic) IBOutlet UIButton *sunAction;
 @property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 @property (weak, nonatomic) IBOutlet UILabel *goodMorning;
+@property (weak, nonatomic) IBOutlet UIButton *repeat;
+@property (weak, nonatomic) IBOutlet UILabel *message;
 @property (strong, nonatomic) NSTimer *timer;
 
 @end
 
 @implementation ViewController
 
-int hour, minutes, seconds;
+int minutes, seconds;
 int secondsLeft;
 
 - (void)viewDidLoad {
@@ -36,14 +38,77 @@ int secondsLeft;
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)sunStop:(id)sender {
-    [self.sun.layer removeAllAnimations];
-    if (self.sunAction.isHidden) {
-        [self startAnimatingLabel];
-    }
+- (IBAction)sunStop:(UITapGestureRecognizer *)sender {
+        if ([self.timerLabel isHidden]) {
+            return;
+        }
+        else if ([self.timer isValid]) {
+            [self.timer invalidate];
+            [self.sun.layer removeAllAnimations];
+        }
+        else {
+            [self countdownTimer];
+            [self animateSun];
+        }
+}
+
+- (void)updateCounter:(NSTimer *)theTimer {
+        if(secondsLeft > 0 ) {
+            secondsLeft -- ;
+            minutes = (secondsLeft % 3600) / 60;
+            seconds = (secondsLeft % 3600) % 60;
+            self.timerLabel.text = [NSString stringWithFormat:@"%02d:%02d", minutes, seconds];
+        } else {
+            secondsLeft = 600;
+        }
+//    float timeRemaining = self.timer.fireDate.timeIntervalSinceNow;
+//    NSUInteger totalSeconds = timeRemaining / 1000;
+//    NSUInteger minutes = totalSeconds / 60;
+//    NSUInteger seconds = totalSeconds % 60;
+//    self.timerLabel.text = [NSString stringWithFormat:@"%02lu:%02lu", (unsigned long)minutes, (unsigned long)seconds];
+}
+
+-(void)countdownTimer {
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateCounter:) userInfo:nil repeats:YES];
+   
+//    if (self.timer) {
+//        self.timer = nil;
+//        self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateCounter:) userInfo:nil repeats:YES];
+//    }
 }
 
 - (IBAction)start:(UIButton *)sender {
+    [self animateSun];
+    [UIView transitionWithView:sender
+                      duration:0.4
+                       options:UIViewAnimationOptionTransitionCrossDissolve
+                    animations:^{
+                        sender.hidden = YES;
+                    }
+                    completion:NULL];
+    
+    [self showTimer];
+    [self hideGoodMorning];
+//    [self showRepeat];
+    [self showMessage];
+    
+    secondsLeft = 600;
+    [self countdownTimer];
+//    NSInvocation *invocation = [[NSInvocation alloc] init];
+//    self.timer = [NSTimer scheduledTimerWithTimeInterval:600 target:self selector:@selector(countdownTimer) userInfo:nil repeats:NO];
+//    [self.timer fire];
+//    NSLog(@"%f", self.timer.fireDate.timeIntervalSinceNow);
+}
+
+//- (IBAction)repeatAction:(id)sender {
+//    if (!self.sun.isAnimating) {
+//        [self animateSun];
+//    }
+//    secondsLeft = 600;
+//    [self countdownTimer];
+//}
+
+- (void)animateSun {
     CABasicAnimation *theAnimation;
     theAnimation=[CABasicAnimation animationWithKeyPath:@"transform.rotation"];
     theAnimation.duration=0.9;
@@ -52,41 +117,37 @@ int secondsLeft;
     theAnimation.fromValue=[NSNumber numberWithFloat:0];
     theAnimation.toValue=[NSNumber numberWithFloat:M_PI/3];
     [[self.sun layer] addAnimation:theAnimation forKey:@"rotateLayer"];
-    
-    [UIView transitionWithView:sender
-                      duration:0.4
-                       options:UIViewAnimationOptionTransitionCrossDissolve
-                    animations:NULL
-                    completion:NULL];
-    
-    sender.hidden = YES;
-    
-    [self showTimer];
-    [self hideGoodMorning];
-    
-    secondsLeft = 16925;
-    [self countdownTimer];
 }
 
 - (void)showTimer {
     [UIView transitionWithView:self.timerLabel
                       duration:1.3
                        options:UIViewAnimationOptionTransitionCrossDissolve
-                    animations:NULL
+                    animations:^{
+                        self.timerLabel.hidden = NO;
+                    }
                     completion:NULL];
-    
-    self.timerLabel.hidden = NO;
 }
 
 - (void)hideGoodMorning {
     [UIView transitionWithView:self.goodMorning
                       duration:1.3
                        options:UIViewAnimationOptionTransitionCrossDissolve
-                    animations:NULL
+                    animations:^{
+                        self.goodMorning.hidden = YES;
+                    }
                     completion:NULL];
-    
-    self.goodMorning.hidden = YES;
 }
+
+//- (void)showRepeat {
+//    [UIView transitionWithView:self.repeat
+//                      duration:1.3
+//                       options:UIViewAnimationOptionTransitionCrossDissolve
+//                    animations:^{
+//                        self.repeat.hidden = NO;
+//                    }
+//                    completion:NULL];
+//}
 
 - (void)startAnimatingLabel {
     self.sunAction.alpha = 0;
@@ -99,20 +160,40 @@ int secondsLeft;
                      } completion:nil];
 }
 
-- (void)updateCounter:(NSTimer *)theTimer {
-    if(secondsLeft > 0 ) {
-        secondsLeft -- ;
-        hour = secondsLeft / 3600;
-        minutes = (secondsLeft % 3600) / 60;
-        seconds = (secondsLeft %3600) % 60;
-        self.timerLabel.text = [NSString stringWithFormat:@"%02d:%02d:%02d", hour, minutes, seconds];
-    } else {
-        secondsLeft = 16925;
-    }
-}
-
--(void)countdownTimer {
-    secondsLeft = hour = minutes = seconds = 0;
+- (void)showMessage {
+//    [UIView animateWithDuration:1.3
+//                          delay:1
+//                        options: UIViewAnimationOptionTransitionCrossDissolve
+//                     animations:^{
+//                         self.message.hidden = NO;
+//                     } completion:NULL];
+    
+    [UIView transitionWithView:self.message
+                      duration:1.3
+                       options:UIViewAnimationOptionTransitionCrossDissolve | UIViewAnimationOptionAutoreverse
+                    animations:^{
+                        self.message.hidden = NO;
+                    }
+                    completion:^(BOOL animated){
+                        self.message.hidden = YES;
+                    }];
+    
+    
+    
+//     ^(BOOL animated){
+//         [UIView transitionWithView:self.message
+//                           duration:1.3
+//                            options:UIViewAnimationOptionTransitionCrossDissolve
+//                         animations:^{
+//                             self.message.hidden = YES;
+//                         } completion:NULL];
+//     }];
+    
+    
+//    [UIView animateWithDuration:1.3
+//                          delay:0
+//                        options:UIViewAnimationOptionTransitionCrossDissolve
+//                     animations:^{self.message.hidden = NO;} completion:nil];
 }
 
 //#pragma mark - Navigation

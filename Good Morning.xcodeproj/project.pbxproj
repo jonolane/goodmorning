@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		983F83D21C61090A0009C2C3 /* backgroundII.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 983F83D11C61090A0009C2C3 /* backgroundII.jpg */; };
-		983F83D41C62AE810009C2C3 /* ic_keyboard_arrow_right_48px-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 983F83D31C62AE810009C2C3 /* ic_keyboard_arrow_right_48px-128.png */; };
 		983F83D71C62BC120009C2C3 /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 983F83D61C62BC120009C2C3 /* AlarmViewController.m */; };
+		98AF61691C651F1B0042EBF4 /* rotate_left-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 98AF61681C651F1B0042EBF4 /* rotate_left-512.png */; };
 		98C9AFEB1C582E43000C6A24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C9AFEA1C582E43000C6A24 /* main.m */; };
 		98C9AFEE1C582E43000C6A24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C9AFED1C582E43000C6A24 /* AppDelegate.m */; };
 		98C9AFF11C582E43000C6A24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C9AFF01C582E43000C6A24 /* ViewController.m */; };
@@ -40,9 +40,9 @@
 
 /* Begin PBXFileReference section */
 		983F83D11C61090A0009C2C3 /* backgroundII.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = backgroundII.jpg; path = "../../../../../School/Human Computer Interaction/good morning/backgroundII.jpg"; sourceTree = "<group>"; };
-		983F83D31C62AE810009C2C3 /* ic_keyboard_arrow_right_48px-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_keyboard_arrow_right_48px-128.png"; path = "../../../../../School/Human Computer Interaction/good morning/ic_keyboard_arrow_right_48px-128.png"; sourceTree = "<group>"; };
 		983F83D51C62BC120009C2C3 /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
 		983F83D61C62BC120009C2C3 /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
+		98AF61681C651F1B0042EBF4 /* rotate_left-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rotate_left-512.png"; path = "../../../../../School/Human Computer Interaction/good morning/rotate_left-512.png"; sourceTree = "<group>"; };
 		98C9AFE61C582E43000C6A24 /* Good Morning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Good Morning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C9AFEA1C582E43000C6A24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98C9AFEC1C582E43000C6A24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 		98C9AFE91C582E43000C6A24 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				983F83D31C62AE810009C2C3 /* ic_keyboard_arrow_right_48px-128.png */,
+				98AF61681C651F1B0042EBF4 /* rotate_left-512.png */,
 				983F83D11C61090A0009C2C3 /* backgroundII.jpg */,
 				98C9B01C1C583813000C6A24 /* sun-v2.png */,
 				98C9AFEA1C582E43000C6A24 /* main.m */,
@@ -221,6 +221,7 @@
 				TargetAttributes = {
 					98C9AFE51C582E43000C6A24 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = FZ5Y3P54B5;
 					};
 					98C9AFFE1C582E43000C6A24 = {
 						CreatedOnToolsVersion = 7.2;
@@ -257,10 +258,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98AF61691C651F1B0042EBF4 /* rotate_left-512.png in Resources */,
 				98C9B01D1C583813000C6A24 /* sun-v2.png in Resources */,
 				98C9AFF91C582E43000C6A24 /* LaunchScreen.storyboard in Resources */,
 				983F83D21C61090A0009C2C3 /* backgroundII.jpg in Resources */,
-				983F83D41C62AE810009C2C3 /* ic_keyboard_arrow_right_48px-128.png in Resources */,
 				98C9AFF61C582E43000C6A24 /* Assets.xcassets in Resources */,
 				98C9AFF41C582E43000C6A24 /* Main.storyboard in Resources */,
 			);
@@ -429,10 +430,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Good Morning/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.j.Good-Morning";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -440,10 +444,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Good Morning/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.j.Good-Morning";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
