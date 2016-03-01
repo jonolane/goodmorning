@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98095F9B1C862D8800000CB4 /* Aquatico-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 98095F9A1C862D8800000CB4 /* Aquatico-Regular.otf */; };
+		98095F9D1C862D9500000CB4 /* Exodus-PersonalUse-Striped.otf in Resources */ = {isa = PBXBuildFile; fileRef = 98095F9C1C862D9500000CB4 /* Exodus-PersonalUse-Striped.otf */; };
+		98095F9F1C862DA400000CB4 /* antre.otf in Resources */ = {isa = PBXBuildFile; fileRef = 98095F9E1C862DA400000CB4 /* antre.otf */; };
 		983F83D21C61090A0009C2C3 /* backgroundII.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 983F83D11C61090A0009C2C3 /* backgroundII.jpg */; };
 		983F83D71C62BC120009C2C3 /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 983F83D61C62BC120009C2C3 /* AlarmViewController.m */; };
 		98AF61691C651F1B0042EBF4 /* rotate_left-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 98AF61681C651F1B0042EBF4 /* rotate_left-512.png */; };
@@ -39,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		98095F9A1C862D8800000CB4 /* Aquatico-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aquatico-Regular.otf"; path = "../../../Dwnlds/Fonts/Aquatico Regular - Personal Use/Aquatico-Regular.otf"; sourceTree = "<group>"; };
+		98095F9C1C862D9500000CB4 /* Exodus-PersonalUse-Striped.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exodus-PersonalUse-Striped.otf"; path = "../../../Dwnlds/Fonts/Exodus - Personal Use/Exodus-PersonalUse-Striped.otf"; sourceTree = "<group>"; };
+		98095F9E1C862DA400000CB4 /* antre.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = antre.otf; path = ../../../Dwnlds/Fonts/Antre/antre.otf; sourceTree = "<group>"; };
 		983F83D11C61090A0009C2C3 /* backgroundII.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = backgroundII.jpg; path = "../../../../../School/Human Computer Interaction/good morning/backgroundII.jpg"; sourceTree = "<group>"; };
 		983F83D51C62BC120009C2C3 /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
 		983F83D61C62BC120009C2C3 /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
@@ -128,6 +134,9 @@
 		98C9AFE91C582E43000C6A24 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				98095F9E1C862DA400000CB4 /* antre.otf */,
+				98095F9C1C862D9500000CB4 /* Exodus-PersonalUse-Striped.otf */,
+				98095F9A1C862D8800000CB4 /* Aquatico-Regular.otf */,
 				98AF61681C651F1B0042EBF4 /* rotate_left-512.png */,
 				983F83D11C61090A0009C2C3 /* backgroundII.jpg */,
 				98C9B01C1C583813000C6A24 /* sun-v2.png */,
@@ -260,10 +269,13 @@
 			files = (
 				98AF61691C651F1B0042EBF4 /* rotate_left-512.png in Resources */,
 				98C9B01D1C583813000C6A24 /* sun-v2.png in Resources */,
+				98095F9F1C862DA400000CB4 /* antre.otf in Resources */,
 				98C9AFF91C582E43000C6A24 /* LaunchScreen.storyboard in Resources */,
+				98095F9D1C862D9500000CB4 /* Exodus-PersonalUse-Striped.otf in Resources */,
 				983F83D21C61090A0009C2C3 /* backgroundII.jpg in Resources */,
 				98C9AFF61C582E43000C6A24 /* Assets.xcassets in Resources */,
 				98C9AFF41C582E43000C6A24 /* Main.storyboard in Resources */,
+				98095F9B1C862D8800000CB4 /* Aquatico-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
