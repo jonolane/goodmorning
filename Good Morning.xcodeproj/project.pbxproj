@@ -45,10 +45,10 @@
 		98095F9A1C862D8800000CB4 /* Aquatico-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aquatico-Regular.otf"; path = "../../../Dwnlds/Fonts/Aquatico Regular - Personal Use/Aquatico-Regular.otf"; sourceTree = "<group>"; };
 		98095F9C1C862D9500000CB4 /* Exodus-PersonalUse-Striped.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exodus-PersonalUse-Striped.otf"; path = "../../../Dwnlds/Fonts/Exodus - Personal Use/Exodus-PersonalUse-Striped.otf"; sourceTree = "<group>"; };
 		98095F9E1C862DA400000CB4 /* antre.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = antre.otf; path = ../../../Dwnlds/Fonts/Antre/antre.otf; sourceTree = "<group>"; };
-		983F83D11C61090A0009C2C3 /* backgroundII.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = backgroundII.jpg; path = "../../../../../School/Human Computer Interaction/good morning/backgroundII.jpg"; sourceTree = "<group>"; };
+		983F83D11C61090A0009C2C3 /* backgroundII.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = backgroundII.jpg; path = ../Images/backgroundII.jpg; sourceTree = "<group>"; };
 		983F83D51C62BC120009C2C3 /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
 		983F83D61C62BC120009C2C3 /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
-		98AF61681C651F1B0042EBF4 /* rotate_left-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rotate_left-512.png"; path = "../../../../../School/Human Computer Interaction/good morning/rotate_left-512.png"; sourceTree = "<group>"; };
+		98AF61681C651F1B0042EBF4 /* rotate_left-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rotate_left-512.png"; path = "../Images/rotate_left-512.png"; sourceTree = "<group>"; };
 		98C9AFE61C582E43000C6A24 /* Good Morning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Good Morning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C9AFEA1C582E43000C6A24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98C9AFEC1C582E43000C6A24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		98C9B00A1C582E43000C6A24 /* Good MorningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Good MorningUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C9B00E1C582E43000C6A24 /* Good_MorningUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Good_MorningUITests.m; sourceTree = "<group>"; };
 		98C9B0101C582E43000C6A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98C9B01C1C583813000C6A24 /* sun-v2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sun-v2.png"; path = "../../../../../School/Human Computer Interaction/good morning/sun-v2.png"; sourceTree = "<group>"; };
+		98C9B01C1C583813000C6A24 /* sun-v2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sun-v2.png"; path = "../Images/sun-v2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
